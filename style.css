@@ -1,0 +1,92 @@
+:root {
+   box-sizing: border-box;
+}
+
+html,
+body,
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #222222;
+   overflow: hidden;
+}
+
+#app {
+   height: 100vh;
+}
+
+.summary {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   margin: 10px auto;
+   border: 5px solid;
+   border-image-slice: 1;
+   animation: gradient 3s ease-in-out infinite;
+   width: 98%;
+   height: 60%;
+   text-align: center;
+   color: white;
+}
+
+@keyframes gradient {
+   0% {
+      border-image-source: linear-gradient(to right, yellow, red, orange, orange, yellow);
+   }
+
+   25% {
+      border-image-source: linear-gradient(to right, orange, yellow, green, yellow, orange);
+   }
+
+   50% {
+      border-image-source: linear-gradient(to right, green, blue, indigo, blue, green);
+   }
+
+   75% {
+      border-image-source: linear-gradient(to right, indigo, violet, purple, violet, indigo);
+   }
+
+   100% {
+      border-image-source: linear-gradient(to right, purple, pink, red, pink, purple);
+   }
+}
+
+
+.line {
+   position: absolute;
+   width: 100%;
+   justify-content: center;
+   text-align: center;
+   margin-top: 20px;
+   background-color: rgb(255, 85, 12);
+}
+
+.games {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.option {
+   margin: 100px 15px;
+   padding: 10px;
+   text-align: center;
+   font-size: 40px;
+   border-radius: 50%;
+   background-color: rgb(209, 147, 72);
+}
+
+.option:hover {
+   cursor: pointer;
+   background-color: rgb(250, 145, 40);
+   transform: scale(110%);
+   -webkit-transform: scale(110%);
+   -moz-transform: scale(110%);
+   -ms-transform: scale(110%);
+   -o-transform: scale(110%);
+
+}
